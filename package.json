@@ -1,0 +1,48 @@
+{
+  "scripts": {
+    "start": "yarn snowpack && yarn server",
+    "server": "node server/server.js",
+    "snowpack": "snowpack build",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "fastify": "^2.14.1",
+    "fastify-cors": "^3.0.3",
+    "fastify-static": "^2.6.0",
+    "import": "^0.0.6",
+    "mongodb": "^3.5.8",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-virtualized": "^9.21.2",
+    "react-vis": "^1.11.7"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-babel": "^1.0.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-virtualized": "^9.21.10",
+    "@types/react-vis": "^1.11.1",
+    "snowpack": "^2.5.0",
+    "typescript": "^3.8.0",
+    "xml2js": "^0.4.23"
+  },
+  "snowpack": {
+    "scripts": {
+      "build:js,jsx": "@snowpack/plugin-babel",
+      "mount:client": "mount client --to /js",
+      "mount:assets": "mount assets --to /"
+    },
+    "plugins": [
+      "@snowpack/plugin-babel"
+    ]
+  },
+  "author": "Alex Ratman",
+  "description": "React Fastify Mongo Typescript demo",
+  "name": "react-fastify-mongo-typescript-demo",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module"
+}
