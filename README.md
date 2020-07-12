@@ -12,20 +12,16 @@ docker-compose up
 * Open `http://localhost:8081`
 
 ### Description ###
-Client/server application for demo purposes. An attempt to create an user friendly UI for big/nested data structures. UI is focused on presenting only most important information, served in chunks of data.
+Client/server demo application. An attempt to create user friendly UI for big/nested data structures (inspired by http://imagenet.stanford.edu/synset?wnid=n02486410). UI is focused on presenting only most important information. Data are being sent in chunks.
 
 ### Technology stack ###
 * React.js (client) 'unbundled' (used as JS modules) with Snowpack
 * Fastify (server)
 * MongoDB (database)
-* Typescript (type checking)
+* Typescript (client side - type checking)
 
 #### Why those technologies? ####
 All starts with data. MongoDB has been selected for huge possibilities with working on flat data structures (indexes, searching, easy inserting/deleting etc.).
 Fastify deliveres quick, simple and reliable solutions for creating simple and fast server side apps.
 React.js is a top tool for working with dynamic data on the client side.
 Typescript helps to maintain the app.
-
-#### Why not to use Typescript on the server side? ####
-Actually there's no reason not to do this - this has been done only for demo purposes.
-
