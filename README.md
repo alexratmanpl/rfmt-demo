@@ -1,4 +1,4 @@
-# React Fastify Mongo Typescript demo #
+# React Fastify Mongo Typescript demo app #
 
 ### Dependencies ###
 * Docker v.19.03.8 or higher
